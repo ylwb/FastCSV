@@ -36,7 +36,7 @@ Features
 Requirements
 ------------
 
-- Java 7
+- Java 8
 
 
 CsvReader Examples
@@ -139,7 +139,7 @@ CsvWriter csvWriter = new CsvWriter();
 csvWriter.setFieldSeparator(';');
 csvWriter.setTextDelimiter('\'');
 csvWriter.setLineDelimiter("\r\n".toCharArray());
-csvWriter.setAlwaysDelimitText(true);
+csvWriter.setTextDelimitStrategy(TextDelimitStrategy.ALWAYS);
 ```
 
 
